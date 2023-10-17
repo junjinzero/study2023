@@ -1,4 +1,4 @@
-package DataStructure;
+package DataStructure.LinearStructure;
 
 public class LinearSearch
 {
