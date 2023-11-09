@@ -18,7 +18,7 @@ public class HeapSort
      */
     public static void main(String[] args)
     {
-        int[] arr = {38, 27, 43, 3, 9, 82, 10};
+        int[] arr = {64, 34, 25, 12, 22, 11, 90};
 
         System.out.println("정렬 전 배열 : ");
         printArray(arr);
@@ -35,6 +35,12 @@ public class HeapSort
         int n = arr.length;
 
         // 최대 힙 구성
+        for(int i = n/2 - 1; i >= 0; i--)
+        {
+            heapify(arr, n ,i);
+        }
+
+        // 최댓값을 반복적으로 추출
         for (int i = n -1; i > 0; i--)
         {
             int temp = arr[0];
